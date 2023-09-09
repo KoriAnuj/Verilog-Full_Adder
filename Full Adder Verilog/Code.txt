@@ -1,0 +1,8 @@
+module fulladder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+
+wire sum,carry;
+assign sum=a^b^c; // sum bit
+assign carry=((a&amp;amp;b) | (b&amp;amp;c) | (a&amp;amp;c)); //carry bit
+endmodule
